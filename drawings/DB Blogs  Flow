@@ -1,1 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2021-10-28T16:59:37.925Z" agent="5.0 (X11)" version="14.8.5" etag="os3nUlMnzBsN8eXOIJlE" type="github"><diagram id="4iey6kgTLWccEPaki4vH">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-28T17:18:15.818Z" agent="5.0 (X11)" etag="b6E5QKFAJrYsj17b9nuk" version="14.8.5" type="github">
+  <diagram id="4iey6kgTLWccEPaki4vH" name="Page-1">
+    <mxGraphModel dx="1177" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-5" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="230" as="sourcePoint" />
+            <mxPoint x="100" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-1" value="Create Blogs View" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-2" value="&lt;div&gt;User Dropdown&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="270" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-3" value="&lt;div&gt;Tag&lt;/div&gt;&lt;div&gt; Dropdown&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="270" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-4" value="&lt;div&gt;Blog Textarea&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="270" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-6" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="k4ywoYJFliuTNX5gVdzN-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="230" as="sourcePoint" />
+            <mxPoint x="220" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-7" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="k4ywoYJFliuTNX5gVdzN-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="240" as="sourcePoint" />
+            <mxPoint x="160" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-8" value="&lt;div&gt;POST body:&lt;br&gt;&lt;br&gt;&lt;br&gt; { userid, tagid, content }&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="35" y="310" width="245" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-9" value="POST `/api/blogs`" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="102.5" y="410" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-10" value="input validation" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="72.5" y="440" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-12" value="&lt;div&gt;DB creates Blog, returns BlogID&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="102.5" y="490" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-13" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="520" width="20" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-14" value="&lt;div&gt;DB insert into BlogTags, (returned BlogID, tagid from req.body)&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="560" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-19" value="" style="curved=1;endArrow=classic;html=1;exitX=0.417;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="k4ywoYJFliuTNX5gVdzN-14" target="k4ywoYJFliuTNX5gVdzN-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="145" y="680" as="sourcePoint" />
+            <mxPoint x="210" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="650" />
+              <mxPoint x="195" y="660" />
+              <mxPoint x="170" y="660" />
+              <mxPoint x="145" y="630" />
+              <mxPoint x="180" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-20" value="res.json info to frontend, including blog id for sick UX" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="570" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-21" value="" style="curved=1;endArrow=classic;html=1;exitX=0.361;exitY=0.034;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="k4ywoYJFliuTNX5gVdzN-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="590" as="sourcePoint" />
+            <mxPoint x="260" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="590" />
+              <mxPoint x="290" y="260" />
+              <mxPoint x="230" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-22" value="&lt;div&gt;Create Blogs View&lt;/div&gt;&lt;div&gt;receives data&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k4ywoYJFliuTNX5gVdzN-23" value="&lt;div&gt;pushes to details page &lt;br&gt;&lt;/div&gt;&lt;div&gt;with that ID&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.67;dx=20;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="145" width="180" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
